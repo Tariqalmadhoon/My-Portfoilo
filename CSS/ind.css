@@ -1,0 +1,501 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  :root{
+    --main-color:rgb(95, 195, 95);
+    --backgroundColor:rgb(0 26 35);
+  }
+
+  body{
+    background-color: rgb(0 26 35);
+ 
+  }
+ 
+.hero{
+  height: 100vh;
+  width: 100%;
+  /* background-color:rgb(36, 33, 33); */
+  background-image: url(../images/tariqp3.jpeg);
+  
+  background-size: cover;
+  background-position: center;
+}
+/* 
+.over{
+   
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/60%);
+  
+} */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+}
+
+span{
+ color: rgb(95, 195, 95); 
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 30px;
+
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover{
+  color:  var(--main-color);
+}
+
+.btn{
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition:.4s ;
+   
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+
+
+.def{
+  color: white;
+  padding: 180px;
+}
+
+.def h1{
+  font-size: 75px;
+}
+
+.def h3{
+font-size: 20px;
+margin-bottom:30px ;
+ 
+}
+
+.def h4{
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.def input{
+  width: 350px;
+  height: 50px;
+  outline: none;
+  border-radius: 20px;
+  position: relative;
+}
+
+.def button{
+  background-color: var(--main-color) ;
+  width: 80px;
+  height: 39px;
+  border-radius: 0 20px 20px 0;
+  color: white;
+  /* position: absolute;
+    left: 445px;
+   bottom: 147px; */
+   border: none;
+  border: 2px solid white;
+
+}
+
+/*************************************************************/
+
+
+/* Start about */
+.about{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about h1{
+ display: flex;
+ justify-content: center;
+ margin-top: 0;
+ color: #fff;
+ 
+}
+
+ 
+
+.about h1 span{
+  color: var(--main-color);
+  margin-left: 10px;
+}
+.about .containerA{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 80px;
+ margin-top: 90px;
+}
+
+
+
+.about .containerA img{
+  width: 420px;
+  border-radius: 5px;
+  box-shadow: -14px 16px 7px var(--main-color);
+}
+
+.about .containerA .textBox p{
+  font-size: 20px;
+  width: 600px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.about .containerA .textBox p i{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+ 
+
+/* End about */
+
+
+
+
+/* Start Service  */
+
+
+
+.service{
+  padding-top: 100px;
+}
+.service h1{
+  display: flex;
+ justify-content: center;
+
+ margin: 0;
+ 
+ color: #fff;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 120px 0;
+  gap: 60px;
+}
+
+
+.container .box{
+  position: relative;
+  width: 380px;
+  height: 450px;
+  background: rgb(16, 47, 57) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.container .box::before{
+  content: '';
+  position: absolute;
+  inset: -10px 50px;
+  border-top: 4px solid var(--clr);
+  border-bottom: 4px solid var(--clr);
+  z-index: -1;
+  transform: skewY(15deg);
+  transition: 0.5s ease-in-out;
+
+
+}
+
+
+.container .box:hover::before{
+  transform: skewY(0deg);
+  inset: -10px 40px;
+}
+
+
+.container .box::after{
+  content: '';
+  position: absolute;
+  inset: 60px -10px;
+  border-right: 4px solid var(--clr);
+  border-left: 4px solid var(--clr);
+ 
+  z-index: -1;
+  transform: skew(15deg);
+  transition: 0.5s ease-in-out;
+
+
+}
+.container .box:hover::after{
+  transform: skew(0deg);
+  inset: 40px -10px;
+  
+
+ 
+}
+
+.container .box .content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* gap: 20px; */
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+ 
+  overflow: hidden;
+
+}
+
+
+
+.container .box .content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* gap: 20px; */
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+}
+
+
+.container .box .content .icon{
+  color: var(--main-color);
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 0 4px #2e2e2e ,0 0 0 6px var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  font-size: 2.5em;
+
+  background: #2e2e2e;
+  transition: 0.5s ease-in-out;
+
+
+}
+
+.container .box:hover .content .icon{
+  background: var(--main-color);
+  color: #2e2e2e;
+  box-shadow: 0 0 0 4px #2e2e2e , 0 0 0 300px var(--main-color);
+}
+
+.container .box .content  .text h3{
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+
+  margin-top:20px ;
+
+}
+
+.container .box:hover .content  .text h3{
+  color: #2e2e2e;
+  margin: 20px;
+}
+
+.container .box .content  .text p{
+  color: #fff;
+  
+  transition: 0.5s ease-in-out;
+}
+
+ 
+
+.container .box:hover .content  .text p{
+  columns: #2e2e2e;
+}
+
+
+.container .box .content .text a{
+position: relative;
+background: var(--main-color);
+color: #2e2e2e;
+padding: 8px 15px;
+display: inline-block;
+text-decoration: none;
+font-weight: 500;
+margin-top: 10px;
+transition: 0.5s ease-in-out;
+border-radius: 5px;
+}
+
+.container .box:hover .content .text a{
+background: #2e2e2e;
+color: var(--main-color);
+}
+/* End Service  */
+
+
+ /* Start projects  */
+ .MyProject{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color:rgb(16, 47, 57)  ;
+  margin-top: 100px;
+ }
+
+.MyProject button{
+ position: relative;
+
+ left: 44%;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.MyProject button:hover{
+background-color: rgb(35, 71, 35);
+transition: 0.5s;
+}
+
+ .MyProject .projectBox{
+  display: flex;
+  justify-content: center;
+ }
+
+ .MyProject .projectBox p{
+  font-size: 30px;
+  color: #fff;
+ }
+  /* End projects  */
+
+
+  /* Start Footer  */
+  footer{
+   
+    background-color: rgb(16, 47, 57) ;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+
+    margin-top: 200px;
+  }
+
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align:  center;
+
+   
+  }
+
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+
+  }
+
+  .social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+
+.social li{
+  margin: 0 10px;
+  font-size: 35px;
+}
+  .social .face a{
+    color: rgb(1, 72, 159);
+  }
+
+  .social .inst a{
+    color: rgb(206, 41, 77);
+  }
+
+
+  .social .twit a{
+    color: rgb(32, 121, 255);
+  }
+  
+
+ 
+
+
+ 
+  .footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+
+   .social .face{
+ 
+   }
+ 
+    /* End Footer  */

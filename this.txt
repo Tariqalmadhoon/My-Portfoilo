@@ -1,0 +1,86 @@
+   <!-- Start About -->
+   <div class="about">
+<div class="container">
+  <div class="inner">
+    <h1>Hello Im, Tariq</h1>
+    <p>Lorem ipsum dolor sit amet consectetur,
+       adipisicing elit. Repellat,
+       nulla tenetur minus eius impedit modi!</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="inner">
+    <h1>Hello Im, Tariq</h1>
+    <p>Lorem ipsum dolor sit amet consectetur,
+       adipisicing elit. Repellat,
+       nulla tenetur minus eius impedit modi
+       !
+       Lorem ipsum dolor sit amet consectetur,
+       adipisicing elit. Repellat,
+       nulla tenetur minus eius impedit modi!Lorem ipsum dolor sit amet consectetur,
+       adipisicing elit. Repellat,
+       nulla tenetur minus eius impedit modi!Lorem ipsum dolor sit amet consectetur,
+       adipisicing elit. Repellat,
+       nulla tenetur minus eius impedit modi!
+      
+      </p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="inner">
+    <h1>Hello Im, Tariq</h1>
+    <p>Lorem ipsum dolor sit amet consectetur,
+       adipisicing elit. Repellat,
+       nulla tenetur minus eius impedit modi!</p>
+  </div>
+</div>
+</div>
+  <!-- End About -->
+
+______________________________________________________________________________________-
+
+/* Start About  */
+.about{
+  padding-top: 100px;
+  padding-bottom: 100px;
+ 
+}
+ .about.container{
+  width: 25%;
+  cursor: pointer;
+  position: relative;
+  bottom: 500px;
+  left: 200px;
+ 
+margin: 10px;
+ 
+}
+
+
+  .container{
+    margin: 10px;
+ 
+  }
+
+
+.inner{
+  width: 50%;
+  clip-path: circle(20% at 15% 50%);
+  transition: clip-path 5s ease-in-out , 1s ease;
+  background-color: rgb(53, 70, 53);
+  color:rgb(53, 70, 53) ;
+  padding: 10px;
+
+  
+}
+
+.inner:hover {
+ 
+clip-path: circle(70%);
+background-color: aqua;
+
+}
+/* End About  */
